@@ -5,7 +5,7 @@
   "main": "./lib/index.js",
   "dependencies": {
     "pkginfo": "0.2.x",
-    "passport-oauth": "https://github.com/andreskir/passport-oauth.git#mercadolibre"
+    "passport-oauth": "git+https://github.com/andreskir/passport-oauth.git#mercadolibre"
   },
   "bugs": {
     "url": "https://github.com/sdurandeu/passport-mercadolibre"
