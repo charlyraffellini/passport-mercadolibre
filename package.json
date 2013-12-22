@@ -4,7 +4,8 @@
   "description": "MercadoLibre OAuth2 strategy for Passport.",
   "main": "./lib/index.js",
   "dependencies": {
-    "pkginfo": "0.2.x"
+    "pkginfo": "0.2.x",
+    "passport-oauth": "~0.1.15"
   },
   "bugs": {
     "url": "https://github.com/sdurandeu/passport-mercadolibre"
