@@ -138,7 +138,6 @@ exports.OAuth2.prototype._executeRequest= function( http_library, options, post_
 exports.OAuth2.prototype.getAuthorizeUrl= function( params ) {
   var params= params || {};
   params['client_id'] = this._clientId;
-  params['type'] = 'web_server';
   return this._baseSite + this._authorizeUrl + "?" + querystring.stringify(params);
 }
 
@@ -146,7 +145,6 @@ exports.OAuth2.prototype.getOAuthAccessToken= function(code, params, callback) {
   var params= params || {};
   params['client_id'] = this._clientId;
   params['client_secret'] = this._clientSecret;
-  params['type']= 'web_server';
   var codeParam = (params.grant_type === 'refresh_token') ? 'refresh_token' : 'code';
   params[codeParam]= code;
 
